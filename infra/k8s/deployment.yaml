@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maut123-coll-057e3731199143ecac80500e418cea8b-depl
+  labels:
+    app: maut123-coll-057e3731199143ecac80500e418cea8b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maut123-coll-057e3731199143ecac80500e418cea8b
+  template:
+    metadata:
+      labels:
+        app: maut123-coll-057e3731199143ecac80500e418cea8b
+    spec:
+      containers:
+        - name: maut123-coll-057e3731199143ecac80500e418cea8b
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:maut123-coll-057e3731199143ecac80500e418cea8b
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9001

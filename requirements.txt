@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+gunicorn
+httpx
+loguru
+sqlalchemy
+psycopg2-binary
+boto3
